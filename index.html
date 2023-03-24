@@ -29,7 +29,9 @@
           <!-- ----------------menu -->
           <ul class="list flex-menu">
             <li class="flex-menu-item">
-              <a class="link link-menu" href="./index.html">Studio</a>
+              <a class="link link-menu link-active" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="flex-menu-item">
               <a class="link link-menu" href="./portfolio.html">Portfolio</a>
@@ -62,7 +64,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hi-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn">Order Service</button>
+          <button data-modal-open type="button" class="btn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- --------------about -->
@@ -414,5 +418,16 @@
         </div>
       </div>
     </footer>
+    <!-- ---------------------------MADAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <svg class="close-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
